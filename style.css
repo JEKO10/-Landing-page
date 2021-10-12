@@ -32,18 +32,21 @@ nav button {
   display: none;
 }
 
-nav img {
+nav img,
+footer img {
   height: 100px;
 }
 
-nav ul {
+nav ul,
+.socials {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav ul li {
+nav ul li,
+.socials li {
   padding: 0 20px;
   font-size: 1.5rem;
 }
@@ -184,6 +187,27 @@ nav ul li:last-child {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+footer {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+footer .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container ul {
+  list-style-type: none;
 }
 
 @media screen and (max-width: 768px) {
