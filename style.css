@@ -68,6 +68,7 @@ nav ul li:last-child {
   font-size: 4rem;
   max-width: 500px;
   padding: 40px 0;
+  font-weight: 500;
 }
 
 .intro p {
