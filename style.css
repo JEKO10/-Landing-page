@@ -24,6 +24,14 @@ nav {
   padding: 0 30px;
 }
 
+nav button {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  display: none;
+}
+
 nav img {
   height: 100px;
 }
@@ -52,6 +60,7 @@ nav ul li:last-child {
   align-items: center;
   background: #2c2640 url("./design/bg-pattern-intro-right-desktop.svg") right
     no-repeat;
+  background-size: 500px;
   color: #fff;
   padding: 50px 20px;
 }
@@ -125,6 +134,7 @@ nav ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .about .items div h1 {
@@ -174,4 +184,22 @@ nav ul li:last-child {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: block;
+  }
+
+  .about .items div h1 {
+    font-size: 1.5rem;
+  }
+
+  .work h1 {
+    font-size: 2.5rem;
+  }
 }
