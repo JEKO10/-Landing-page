@@ -28,13 +28,13 @@ nav button {
   background: none;
   outline: none;
   border: none;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: none;
 }
 
 nav img,
 footer img {
-  height: 100px;
+  max-height: 100px;
 }
 
 nav ul,
@@ -138,7 +138,8 @@ nav ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   padding: 0 10px;
 }
 
@@ -256,10 +257,6 @@ footer .first {
     padding: 10px;
   }
 
-  .about .items div:not(.prices) {
-    padding: 0;
-  }
-
   .about .items div h1 {
     font-size: 1.3rem;
   }
@@ -271,6 +268,45 @@ footer .first {
   }
 
   .work h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    background-size: 400px;
+  }
+
+  .intro img {
+    display: none;
+  }
+
+  #leftImg {
+    height: 300px;
+  }
+
+  .about {
+    margin-bottom: 7rem;
+  }
+
+  .about #title {
+    font-size: 2.7rem;
+    padding: 40px 0;
+  }
+
+  .items {
+    flex-wrap: wrap;
+  }
+
+  .items div {
+    margin-bottom: 3rem;
+  }
+
+  .about .items div img {
+    margin-bottom: 20px;
+  }
+
+  .about .items div p {
+    font-size: 1rem;
   }
 }
