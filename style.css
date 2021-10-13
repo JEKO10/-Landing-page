@@ -214,6 +214,10 @@ footer .first {
   margin: 0 auto;
 }
 
+.container div {
+  padding: 0 10px;
+}
+
 .container ul {
   list-style-type: none;
   margin-bottom: 2rem;
@@ -221,7 +225,6 @@ footer .first {
 
 .container ul li {
   font-weight: 800;
-  /* font-size: 1.2rem; */
   padding: 5px 0;
   opacity: 0.8;
 }
@@ -320,5 +323,27 @@ footer .first {
 
   .work button {
     font-weight: 700;
+  }
+
+  footer img {
+    max-height: 50px;
+  }
+
+  .socials li {
+    padding: 0 20px;
+    font-size: 1.3rem;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .container ul {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
