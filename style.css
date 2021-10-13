@@ -309,4 +309,16 @@ footer .first {
   .about .items div p {
     font-size: 1rem;
   }
+
+  .work h1 {
+    font-size: 1.5rem;
+  }
+
+  .work div {
+    padding: 60px 20px;
+  }
+
+  .work button {
+    font-weight: 700;
+  }
 }
