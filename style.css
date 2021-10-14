@@ -234,6 +234,35 @@ footer .first {
   opacity: 0.5;
 }
 
+.menuMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: #fff;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listMobile {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listMobile li {
+  font-size: 10vw;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   nav ul {
     display: none;
