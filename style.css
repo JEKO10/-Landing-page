@@ -30,6 +30,7 @@ nav button {
   border: none;
   font-size: 2.5rem;
   display: none;
+  z-index: 3;
 }
 
 nav img,
@@ -240,13 +241,14 @@ footer .first {
   left: 0;
   background-color: black;
   color: #fff;
-  opacity: 0.8;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
 }
 
 .listMobile {
@@ -261,6 +263,11 @@ footer .first {
   font-size: 10vw;
   padding: 20px 0;
   cursor: pointer;
+}
+
+.show {
+  display: inline-flex;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -305,6 +312,11 @@ footer .first {
 }
 
 @media screen and (max-width: 480px) {
+  nav {
+    padding: 0;
+    padding-right: 20px;
+  }
+
   .intro {
     background-size: 400px;
   }
@@ -360,13 +372,8 @@ footer .first {
     font-size: 1.3rem;
   }
 
-  footer img,
-  nav img {
+  footer img {
     max-height: 50px;
-  }
-
-  nav button {
-    font-size: 1.5rem;
   }
 
   .socials li {
